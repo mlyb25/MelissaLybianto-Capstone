@@ -1,0 +1,44 @@
+/* Global container styling */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Center the dashboard content while keeping text left-aligned */
+.container {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+/* Stock list styling */
+.stock-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.stock-list li {
+  background: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Reduce unnecessary text styling */
+.read-the-docs {
+  color: #888;
+}
+
+

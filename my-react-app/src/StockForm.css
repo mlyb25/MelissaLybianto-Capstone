@@ -1,0 +1,51 @@
+.stock-form {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center; /* Aligns fields */
+    padding: 10px;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+/* Ensure each row is aligned properly */
+.input-group {
+    display: flex;
+    flex-direction: column; /* Stack label above input */
+    font-size: 14px;
+    font-weight: bold;
+    color: #333; /* Darker text for labels */
+    width: 100%; /* Ensure input group takes full width */
+  }
+
+  /* Input field */
+  .stock-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    height: 44px; /* Set a fixed height */
+    box-sizing: border-box; /* Include padding in height */
+    margin: 0; /* Ensure consistent margin */
+  }
+
+  .stock-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px; /* 8px top/bottom, 12px left/right */
+    border-radius: 4px; 
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    height: 36px;
+    margin: 0; /* Ensure consistent margin */
+    white-space: nowrap;
+    box-sizing: border-box; /*Ensure padding is included in width */
+  }
+  
+  .stock-form button:hover {
+    background-color: #0056b3;
+  }
