@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import StockForm from "./StockForm";
+import StockList from "./StockList";
 import "./App.css";
 
 function App() {
@@ -13,19 +14,7 @@ function App() {
     <div className="container">
       <h1>Finance Dashboard</h1>
       <StockForm onAddStock={addStock} />
-
-      <h2>Stock List</h2>
-      {stocks.length === 0 ? (
-        <p>No stocks added yet.</p>
-      ) : (
-        <ul>
-          {stocks.map((stock, index) => (
-            <li key={index}>
-              {stock.symbol} - {stock.quantity} shares @ ${stock.price.toFixed(2)}
-            </li>
-          ))}
-        </ul>
-      )}
+      <StockList stocks={stocks}/>
     </div>
   );
 }

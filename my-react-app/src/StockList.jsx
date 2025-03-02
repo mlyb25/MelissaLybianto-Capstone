@@ -15,7 +15,7 @@ useEffect(()=> {
             );
             const data = await response.json ();
             prices [stock.symbol]= parseFloat (
-                data["Global Quote"]["05,price"]
+                data["Global Quote"]["05.price"]
             );
         }
         setCurrentPrices(prices);
@@ -39,14 +39,20 @@ return (
                             {stock.price.toFixed(2)} each
                         </div>
                         <div>
-                            Current Price: $
-                            {currentPrices[stock.symbol]
-                            ? calculateProfitLoss(
-                                stock.price,
-                                currentPrices [stock.symbol],
-                                stock.quantity
-                            ).toFixed(2)
-                            : "Calculating..."}
+                        Current Price: $
+                {currentPrices[stock.symbol]
+                  ? currentPrices[stock.symbol].toFixed(2)
+                  : "Loading..."}
+              </div>
+              <div>
+                Profit/Loss: $
+                {currentPrices[stock.symbol]
+                  ? calculateProfitLoss(
+                      stock.price,
+                      currentPrices[stock.symbol],
+                      stock.quantity
+                    ).toFixed(2)
+                  : "Calculating..."}
                         </div>
                     </li>
                 ))}
@@ -56,4 +62,4 @@ return (
 );
 }
 
-export default Stocklist;
+export default StockList;
