@@ -1,0 +1,20 @@
+.stock-list {
+    margin-top: 2rem;
+  }
+  
+  .stock-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .stock-list li {
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .stock-list div {
+    margin-bottom: 0.5rem;
+  }
