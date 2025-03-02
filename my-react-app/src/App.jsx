@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import StockForm from "./StockForm";
-import StockList from "./stockList";
 import "./App.css";
 
 function App() {
