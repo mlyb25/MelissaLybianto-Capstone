@@ -90,5 +90,3 @@ function StockList({ stocks }) {
 
   
 export default StockList;
-
-
